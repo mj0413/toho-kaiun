@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ja" data-lang="jp">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>保有船舶 | 東宝海運株式会社</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/shared.css" />
+</head>
+<body>
+
+<div data-partial="header" data-active="fleet" data-transparent="true"></div>
+
+<section class="page-hero" data-screen-label="Fleet Hero">
+  <div class="deco-bg"></div>
+  <div class="img-ph dark" style="position:absolute;inset:0;border:none;opacity:0.3" data-parallax="0.2">
+    <span class="ph-label">B-ROLL — Fleet at anchor, golden hour</span>
+  </div>
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html"><span class="jp">トップ</span><span class="en-text">Home</span></a>
+      <span>/</span>
+      <span><span class="jp">保有船舶</span><span class="en-text">Fleet</span></span>
+    </div>
+    <h1><span class="jp">保有船舶・設備</span><span class="en-text">Fleet & equipment</span></h1>
+    <p class="en-label">FLEET / 07</p>
+    <p style="margin-top:24px;max-width:60ch;color:rgba(255,255,255,0.8);font-size:16px">
+      <span class="jp">瀬戸内の航行条件に最適化された、6隻のタグボートと台船を運用しています。</span>
+      <span class="en-text">Six tugboats and barges, optimised for Seto Inland Sea operating conditions.</span>
+    </p>
+  </div>
+  <svg class="wave-line" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C240,10 480,50 720,30 C960,10 1200,50 1440,30 L1440,60 L0,60 Z" fill="rgba(255,255,255,0.06)"/></svg>
+</section>
+
+<!-- Fleet stats bar -->
+<section class="fleet-stats">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-val en"><span data-count="6">0</span></span>
+        <span class="stat-key"><span class="jp">保有船舶</span><span class="en-text">Vessels</span></span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val en"><span data-count="4">0</span></span>
+        <span class="stat-key"><span class="jp">タグボート</span><span class="en-text">Tugboats</span></span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val en"><span data-count="2">0</span></span>
+        <span class="stat-key"><span class="jp">台船</span><span class="en-text">Barges</span></span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val en"><span data-count="3200">0</span><span class="unit">HP</span></span>
+        <span class="stat-key"><span class="jp">最大出力</span><span class="en-text">Peak power</span></span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val en"><span data-count="1500">0</span><span class="unit">t</span></span>
+        <span class="stat-key"><span class="jp">最大積載</span><span class="en-text">Peak capacity</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Filter -->
+<section style="background:var(--white);border-bottom:1px solid var(--line)">
+  <div class="container fleet-filter">
+    <div class="filter-label">
+      <span class="mono">FILTER</span>
+      <span class="jp">船種で絞り込む</span><span class="en-text">Filter by type</span>
+    </div>
+    <div class="filter-tabs">
+      <button class="tab is-active" data-filter="all"><span class="jp">すべて</span><span class="en-text">All</span><span class="count en">06</span></button>
+      <button class="tab" data-filter="tug"><span class="jp">タグボート</span><span class="en-text">Tugboat</span><span class="count en">04</span></button>
+      <button class="tab" data-filter="barge"><span class="jp">台船</span><span class="en-text">Barge</span><span class="count en">02</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- Vessels grid -->
+<section class="section">
+  <div class="container">
+    <div class="vessel-grid">
+      <!-- Tug 1 -->
+      <article class="vessel-card" data-type="tug" data-reveal>
+        <div class="img-ph vessel-img">
+          <span class="ph-label">第八東宝丸 · TOHO MARU NO.8</span>
+          <span class="ph-text">[ broadside photo · 16:9 ]</span>
+        </div>
+        <div class="vessel-body">
+          <div class="vessel-head">
+            <span class="vessel-type mono">TUGBOAT · 01</span>
+            <span class="vessel-status mono">IN SERVICE</span>
+          </div>
+          <h3>第八東宝丸<small class="en-text">Toho Maru No.8</small></h3>
+          <dl class="vessel-spec">
+            <div><dt><span class="jp">総トン数</span><span class="en-text">GT</span></dt><dd class="en">198 t</dd></div>
+            <div><dt><span class="jp">全長 (LOA)</span><span class="en-text">LOA</span></dt><dd class="en">29.5 m</dd></div>
+            <div><dt><span class="jp">出力</span><span class="en-text">Power</span></dt><dd class="en">2,400 HP</dd></div>
+            <div><dt><span class="jp">就役年</span><span class="en-text">Year</span></dt><dd class="en">2019</dd></div>
+            <div><dt><span class="jp">主機</span><span class="en-text">Engine</span></dt><dd class="en">Yanmar 6EY22LW</dd></div>
+            <div><dt><span class="jp">建造</span><span class="en-text">Built at</span></dt><dd><span class="jp">山中造船</span><span class="en-text">Yamanaka SY</span></dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Tug 2 -->
+      <article class="vessel-card" data-type="tug" data-reveal data-reveal-delay="1">
+        <div class="img-ph vessel-img">
+          <span class="ph-label">第十一東宝 · TOHO NO.11</span>
+          <span class="ph-text">[ broadside photo · 16:9 ]</span>
+        </div>
+        <div class="vessel-body">
+          <div class="vessel-head">
+            <span class="vessel-type mono">TUGBOAT · 02</span>
+            <span class="vessel-status mono">IN SERVICE</span>
+          </div>
+          <h3>第十一東宝<small class="en-text">Toho No.11</small></h3>
+          <dl class="vessel-spec">
+            <div><dt><span class="jp">総トン数</span><span class="en-text">GT</span></dt><dd class="en">235 t</dd></div>
+            <div><dt><span class="jp">全長 (LOA)</span><span class="en-text">LOA</span></dt><dd class="en">32.0 m</dd></div>
+            <div><dt><span class="jp">出力</span><span class="en-text">Power</span></dt><dd class="en">3,200 HP</dd></div>
+            <div><dt><span class="jp">就役年</span><span class="en-text">Year</span></dt><dd class="en">2022</dd></div>
+            <div><dt><span class="jp">主機</span><span class="en-text">Engine</span></dt><dd class="en">Niigata 6L28HX</dd></div>
+            <div><dt><span class="jp">建造</span><span class="en-text">Built at</span></dt><dd><span class="jp">神田造船</span><span class="en-text">Kanda SY</span></dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Tug 3 -->
+      <article class="vessel-card" data-type="tug" data-reveal data-reveal-delay="2">
+        <div class="img-ph vessel-img">
+          <span class="ph-label">第五東宝丸 · TOHO MARU NO.5</span>
+          <span class="ph-text">[ broadside photo · 16:9 ]</span>
+        </div>
+        <div class="vessel-body">
+          <div class="vessel-head">
+            <span class="vessel-type mono">TUGBOAT · 03</span>
+            <span class="vessel-status mono">IN SERVICE</span>
+          </div>
+          <h3>第五東宝丸<small class="en-text">Toho Maru No.5</small></h3>
+          <dl class="vessel-spec">
+            <div><dt><span class="jp">総トン数</span><span class="en-text">GT</span></dt><dd class="en">158 t</dd></div>
+            <div><dt><span class="jp">全長 (LOA)</span><span class="en-text">LOA</span></dt><dd class="en">26.0 m</dd></div>
+            <div><dt><span class="jp">出力</span><span class="en-text">Power</span></dt><dd class="en">1,800 HP</dd></div>
+            <div><dt><span class="jp">就役年</span><span class="en-text">Year</span></dt><dd class="en">2014</dd></div>
+            <div><dt><span class="jp">主機</span><span class="en-text">Engine</span></dt><dd class="en">Daihatsu 6DK-26</dd></div>
+            <div><dt><span class="jp">建造</span><span class="en-text">Built at</span></dt><dd><span class="jp">三和ドック</span><span class="en-text">Sanwa Dock</span></dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Tug 4 -->
+      <article class="vessel-card" data-type="tug" data-reveal data-reveal-delay="3">
+        <div class="img-ph vessel-img">
+          <span class="ph-label">第十二東宝 · TOHO NO.12 (NEW)</span>
+          <span class="ph-text">[ broadside photo · 16:9 ]</span>
+        </div>
+        <div class="vessel-body">
+          <div class="vessel-head">
+            <span class="vessel-type mono">TUGBOAT · 04</span>
+            <span class="vessel-status mono incoming">SCHEDULED 2026</span>
+          </div>
+          <h3>第十二東宝<small class="en-text">Toho No.12</small></h3>
+          <dl class="vessel-spec">
+            <div><dt><span class="jp">総トン数</span><span class="en-text">GT</span></dt><dd class="en">245 t</dd></div>
+            <div><dt><span class="jp">全長 (LOA)</span><span class="en-text">LOA</span></dt><dd class="en">33.0 m</dd></div>
+            <div><dt><span class="jp">出力</span><span class="en-text">Power</span></dt><dd class="en">3,400 HP</dd></div>
+            <div><dt><span class="jp">就役年</span><span class="en-text">Year</span></dt><dd class="en">2026 (planned)</dd></div>
+            <div><dt><span class="jp">主機</span><span class="en-text">Engine</span></dt><dd class="en">Next-gen ECO</dd></div>
+            <div><dt><span class="jp">建造</span><span class="en-text">Built at</span></dt><dd><span class="jp">神田造船</span><span class="en-text">Kanda SY</span></dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Barge 1 -->
+      <article class="vessel-card" data-type="barge" data-reveal>
+        <div class="img-ph vessel-img">
+          <span class="ph-label">東宝台船1101 · TOHO BARGE 1101</span>
+          <span class="ph-text">[ deck-on photo · 16:9 ]</span>
+        </div>
+        <div class="vessel-body">
+          <div class="vessel-head">
+            <span class="vessel-type mono">BARGE · 01</span>
+            <span class="vessel-status mono">IN SERVICE</span>
+          </div>
+          <h3>東宝台船 1101<small class="en-text">Toho Barge 1101</small></h3>
+          <dl class="vessel-spec">
+            <div><dt><span class="jp">最大積載</span><span class="en-text">Capacity</span></dt><dd class="en">1,500 t</dd></div>
+            <div><dt><span class="jp">全長 (LOA)</span><span class="en-text">LOA</span></dt><dd class="en">60.0 m</dd></div>
+            <div><dt><span class="jp">幅</span><span class="en-text">Beam</span></dt><dd class="en">18.0 m</dd></div>
+            <div><dt><span class="jp">就役年</span><span class="en-text">Year</span></dt><dd class="en">2016</dd></div>
+            <div><dt><span class="jp">甲板積</span><span class="en-text">Deck load</span></dt><dd class="en">12 t/㎡</dd></div>
+            <div><dt><span class="jp">建造</span><span class="en-text">Built at</span></dt><dd><span class="jp">瀬戸内造船</span><span class="en-text">Setouchi SY</span></dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Barge 2 -->
+      <article class="vessel-card" data-type="barge" data-reveal data-reveal-delay="1">
+        <div class="img-ph vessel-img">
+          <span class="ph-label">東宝台船803 · TOHO BARGE 803</span>
+          <span class="ph-text">[ deck-on photo · 16:9 ]</span>
+        </div>
+        <div class="vessel-body">
+          <div class="vessel-head">
+            <span class="vessel-type mono">BARGE · 02</span>
+            <span class="vessel-status mono">IN SERVICE</span>
+          </div>
+          <h3>東宝台船 803<small class="en-text">Toho Barge 803</small></h3>
+          <dl class="vessel-spec">
+            <div><dt><span class="jp">最大積載</span><span class="en-text">Capacity</span></dt><dd class="en">800 t</dd></div>
+            <div><dt><span class="jp">全長 (LOA)</span><span class="en-text">LOA</span></dt><dd class="en">48.0 m</dd></div>
+            <div><dt><span class="jp">幅</span><span class="en-text">Beam</span></dt><dd class="en">14.0 m</dd></div>
+            <div><dt><span class="jp">就役年</span><span class="en-text">Year</span></dt><dd class="en">2012</dd></div>
+            <div><dt><span class="jp">甲板積</span><span class="en-text">Deck load</span></dt><dd class="en">10 t/㎡</dd></div>
+            <div><dt><span class="jp">建造</span><span class="en-text">Built at</span></dt><dd><span class="jp">瀬戸内造船</span><span class="en-text">Setouchi SY</span></dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Equipment -->
+<section class="section section--cream">
+  <div class="container">
+    <div data-reveal>
+      <span class="eyebrow">Equipment / 08</span>
+      <h2 class="section-title">
+        <span class="jp">航海・通信・安全設備</span>
+        <span class="en-text">Navigation, comms & safety</span>
+      </h2>
+      <p class="section-lead"><span class="jp">最新の航海支援装置と通信機器を装備。気象・他船・潮汐の情報を統合し、現場の判断を支えます。</span><span class="en-text">Modern navigation aids and comms equipment, integrating weather, traffic and tide data to support on-site judgement.</span></p>
+    </div>
+
+    <div class="equip-grid">
+      <div class="equip"><span class="equip-no mono">E.01</span><h4><span class="jp">ECDIS</span><span class="en-text"> · Chart system</span></h4><p><span class="jp">電子海図情報表示装置で航路を可視化。</span><span class="en-text">Electronic chart display for route visualisation.</span></p></div>
+      <div class="equip"><span class="equip-no mono">E.02</span><h4><span class="jp">AIS</span><span class="en-text"> · Traffic awareness</span></h4><p><span class="jp">船舶自動識別装置で周辺船舶を常時把握。</span><span class="en-text">Automatic identification system tracks nearby traffic.</span></p></div>
+      <div class="equip"><span class="equip-no mono">E.03</span><h4><span class="jp">ARPA レーダー</span><span class="en-text"> · ARPA radar</span></h4><p><span class="jp">衝突回避を補助する自動追跡装置付レーダー。</span><span class="en-text">Auto-tracking radar to aid collision avoidance.</span></p></div>
+      <div class="equip"><span class="equip-no mono">E.04</span><h4><span class="jp">VHF / GMDSS</span><span class="en-text"> · Comms</span></h4><p><span class="jp">VHF無線および全世界海上遭難・安全通信システム。</span><span class="en-text">VHF radio and Global Maritime Distress and Safety System.</span></p></div>
+      <div class="equip"><span class="equip-no mono">E.05</span><h4><span class="jp">気象情報端末</span><span class="en-text"> · Weather feed</span></h4><p><span class="jp">気象・潮汐・うねりをリアルタイムで取得。</span><span class="en-text">Realtime weather, tide and swell data feed.</span></p></div>
+      <div class="equip"><span class="equip-no mono">E.06</span><h4><span class="jp">救命設備</span><span class="en-text"> · Lifesaving</span></h4><p><span class="jp">救命艇・救命胴衣を SOLAS 基準で完備。</span><span class="en-text">Lifeboats and jackets to SOLAS standard.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<div data-partial="footer"></div>
+
+<script src="assets/partials.js"></script>
+<script src="assets/main.js"></script>
+
+<script>
+// Vessel filter
+document.querySelectorAll('.fleet-filter .tab').forEach((tab) => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.fleet-filter .tab').forEach((t) => t.classList.remove('is-active'));
+    tab.classList.add('is-active');
+    const filter = tab.dataset.filter;
+    document.querySelectorAll('.vessel-card').forEach((card) => {
+      const show = filter === 'all' || card.dataset.type === filter;
+      card.style.display = show ? '' : 'none';
+    });
+  });
+});
+</script>
+
+<style>
+.fleet-stats { background: var(--navy-900); color: var(--white); padding: 36px 0; }
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.stat-item { display: flex; flex-direction: column; gap: 4px; }
+.stat-val { font-size: clamp(28px, 3vw, 40px); font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+.stat-val .unit { font-size: 0.4em; color: var(--navy-300); font-weight: 600; margin-left: 2px; }
+.stat-key { font-size: 11px; letter-spacing: 0.06em; color: rgba(255,255,255,0.7); }
+
+.fleet-filter {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 18px var(--gutter);
+  flex-wrap: wrap;
+}
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.filter-label .mono { font-size: 10px; color: var(--navy-500); letter-spacing: 0.2em; }
+.filter-tabs { display: flex; gap: 8px; }
+.tab {
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 99px;
+  color: var(--text-2);
+  transition: all 200ms var(--ease);
+}
+.tab:hover { border-color: var(--navy-700); color: var(--navy-900); }
+.tab.is-active { background: var(--navy-900); border-color: var(--navy-900); color: var(--white); }
+.tab .count { font-size: 11px; letter-spacing: 0.1em; opacity: 0.6; }
+
+.vessel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.vessel-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  transition: transform 360ms var(--ease), box-shadow 360ms var(--ease);
+}
+.vessel-card:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -30px rgba(10,25,41,0.18); }
+.vessel-img { aspect-ratio: 16/9; }
+.vessel-body { padding: 28px; }
+.vessel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+.vessel-type { color: var(--navy-500); }
+.vessel-status {
+  padding: 3px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 99px;
+  color: var(--text-2);
+}
+.vessel-status.incoming {
+  background: oklch(0.95 0.08 80);
+  border-color: oklch(0.85 0.12 70);
+  color: oklch(0.4 0.16 60);
+}
+.vessel-body h3 { font-size: 22px; margin-bottom: 20px; }
+.vessel-body h3 small { display: block; font-family: var(--font-en); font-size: 12px; color: var(--text-3); margin-top: 4px; font-weight: 500; letter-spacing: 0.08em; }
+.vessel-spec {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 32px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.vessel-spec > div { display: flex; flex-direction: column; gap: 2px; }
+.vessel-spec dt { font-size: 11px; color: var(--text-3); letter-spacing: 0.04em; }
+.vessel-spec dt .en-text { display: inline; font-family: var(--font-en); margin-left: 4px; opacity: 0.6; font-size: 10px; }
+.vessel-spec dd { margin: 0; font-size: 14px; font-weight: 600; color: var(--navy-900); }
+
+.equip-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.equip {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.equip-no { font-size: 10px; letter-spacing: 0.18em; color: var(--navy-500); font-weight: 700; }
+.equip h4 { font-size: 15px; margin-top: 6px; }
+.equip h4 .en-text { font-family: var(--font-en); color: var(--text-3); font-size: 12px; font-weight: 500; }
+.equip p { margin: 0; font-size: 13px; color: var(--text-2); line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .vessel-grid { grid-template-columns: 1fr; }
+  .vessel-spec { grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+  .equip-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+</body>
+</html>
