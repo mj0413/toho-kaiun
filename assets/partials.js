@@ -124,7 +124,6 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 TOHO KAIUN CO., LTD. ALL RIGHTS RESERVED.</span>
-      <span class="mono">DESIGNED FOR THE SETO INLAND SEA</span>
     </div>
   </div>
 </footer>`;
