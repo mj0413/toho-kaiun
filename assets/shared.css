@@ -609,6 +609,17 @@ svg.arrow {
   }
 }
 
+@media (max-width: 600px) {
+  .section { padding: clamp(48px, 10vw, 70px) 0; }
+  .section-title { font-size: clamp(24px, 6vw, 32px); }
+  .section-lead { font-size: 14px; }
+  .page-hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 56px; }
+  .page-hero h1 { font-size: clamp(28px, 7vw, 40px); }
+  .site-footer .footer-top { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .btn { padding: 12px 18px; font-size: 12px; }
+}
+
 /* Mobile drawer */
 .drawer {
   position: fixed;
