@@ -1035,6 +1035,13 @@
   .news-list .news-cat { grid-row: 1; grid-column: 2; justify-self: start; }
   .news-list .news-title { grid-column: 1 / -1; grid-row: 2; }
 }
+@media (max-width: 600px) {
+  .hero-title { font-size: clamp(32px, 9vw, 48px); }
+  .hero-sub { font-size: 14px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .intro-stats { grid-template-columns: 1fr 1fr; }
+  .hero-meta { flex-direction: column; gap: 12px; }
+}
 </style>
 
 </body>
