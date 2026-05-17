@@ -4,512 +4,172 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>安全・品質への取組み | 東宝海運株式会社</title>
-<meta name="description" content="東宝海運の安全運航への取組み。仕組み・人・設備の3軸で安全を守ります。" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/shared.css" />
-<style>
-/* ── Page-level styles ─────────────────────────────────────── */
-
-/* Hero */
-.page-hero-safety {
-  position: relative;
-  padding-top: calc(var(--header-h) + 100px);
-  padding-bottom: 100px;
-  background: var(--navy-900);
-  color: var(--white);
-  overflow: hidden;
-}
-.page-hero-safety .container { position: relative; z-index: 2; }
-.page-hero-safety .deco-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 80% 20%, rgba(74,144,217,0.22), transparent 55%),
-    radial-gradient(ellipse at 10% 90%, rgba(43,108,180,0.18), transparent 50%),
-    radial-gradient(ellipse at 50% 60%, rgba(20,54,92,0.4), transparent 60%);
-  pointer-events: none;
-}
-.page-hero-safety .hero-bg-img {
-  position: absolute;
-  inset: 0;
-  opacity: 0.25;
-  background:
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0 10px, transparent 10px 22px),
-    var(--navy-800);
-  pointer-events: none;
-}
-.page-hero-safety .ph-label-float {
-  position: absolute;
-  top: 20px; left: 20px;
-  padding: 5px 10px;
-  background: rgba(255,255,255,0.14);
-  color: rgba(255,255,255,0.8);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  border-radius: 2px;
-  backdrop-filter: blur(4px);
-}
-.page-hero-safety .breadcrumb {
-  font-family: var(--font-en);
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  color: var(--navy-300);
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 24px;
-}
-.page-hero-safety .breadcrumb a { opacity: 0.7; transition: opacity 200ms; }
-.page-hero-safety .breadcrumb a:hover { opacity: 1; }
-.page-hero-safety h1 {
-  font-size: clamp(38px, 5.5vw, 64px);
-  line-height: 1.15;
-  letter-spacing: 0.01em;
-}
-.hero-page-label {
-  font-family: var(--font-en);
-  font-size: 12px;
-  letter-spacing: 0.32em;
-  color: var(--navy-300);
-  text-transform: uppercase;
-  margin-top: 14px;
-  display: block;
-}
-.hero-page-lead {
-  margin-top: 28px;
-  max-width: 62ch;
-  color: rgba(255,255,255,0.78);
-  font-size: 16px;
-  line-height: 1.85;
-}
-.page-hero-safety .wave-line {
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 60px;
-  pointer-events: none;
-}
-
-/* Policy */
-.policy-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: clamp(40px, 6vw, 100px);
-  align-items: start;
-}
-.policy-statement {
-  font-size: 16px;
-  line-height: 2.05;
-  color: var(--text);
-  margin: 0 0 36px;
-}
-.policy-statement strong { color: var(--navy-700); font-weight: 700; }
-.policy-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--line);
-}
-.policy-list li {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 20px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 15px;
-  align-items: center;
-}
-.policy-list .num {
-  font-family: var(--font-en);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--navy-500);
-}
-
-/* Pillars */
-.pillars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.pillar {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  padding: 36px 32px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: background 300ms var(--ease), border-color 300ms var(--ease);
-}
-.pillar:hover {
-  background: rgba(255,255,255,0.07);
-  border-color: rgba(255,255,255,0.18);
-}
-.pillar-no {
-  font-family: var(--font-en);
-  font-size: 38px;
-  font-weight: 800;
-  color: var(--navy-300);
-  letter-spacing: 0.04em;
-  line-height: 1;
-  margin-bottom: 6px;
-}
-.pillar h3 { font-size: 22px; font-weight: 700; color: var(--white); }
-.pillar > p {
-  margin: 0;
-  color: rgba(255,255,255,0.68);
-  font-size: 14px;
-  line-height: 1.9;
-}
-.pillar-items {
-  list-style: none;
-  margin: 0;
-  padding: 20px 0 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.pillar-items li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  color: rgba(255,255,255,0.78);
-}
-.pillar-items li::before {
-  content: "";
-  flex-shrink: 0;
-  width: 6px;
-  height: 6px;
-  background: var(--navy-400);
-  border-radius: 50%;
-}
-
-/* Record */
-.record-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.record {
-  background: var(--white);
-  padding: 32px 28px 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-top: 3px solid var(--navy-700);
-  box-shadow: 0 2px 12px rgba(10,25,41,0.06);
-}
-.rec-num {
-  font-family: var(--font-en);
-  font-size: clamp(42px, 4vw, 58px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--navy-900);
-  line-height: 1;
-}
-.rec-unit {
-  font-family: var(--font-en);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-3);
-  margin-top: 8px;
-  letter-spacing: 0.06em;
-}
-.rec-label {
-  font-size: 13px;
-  color: var(--text-2);
-  margin-top: 18px;
-  line-height: 1.55;
-}
-
-/* Environment */
-.env-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: clamp(40px, 6vw, 80px);
-  align-items: start;
-}
-.env-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.env-item {
-  background: var(--cream);
-  padding: 24px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-left: 3px solid var(--navy-500);
-  transition: transform 250ms var(--ease), box-shadow 250ms var(--ease);
-}
-.env-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(10,25,41,0.08);
-}
-.env-no {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.24em;
-  color: var(--navy-500);
-  font-weight: 700;
-}
-.env-item h4 { font-size: 15px; font-weight: 700; margin: 0; }
-.env-item p {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text-2);
-  line-height: 1.8;
-}
-
-/* ── Responsive ─────────────────────────────────────────────── */
-@media (max-width: 960px) {
-  .policy-grid, .env-grid { grid-template-columns: 1fr; }
-  .pillars { grid-template-columns: 1fr 1fr; }
-  .record-grid { grid-template-columns: 1fr 1fr; }
-  .env-list { grid-template-columns: 1fr; }
-}
-@media (max-width: 600px) {
-  .pillars { grid-template-columns: 1fr; }
-  .record-grid { grid-template-columns: 1fr 1fr; }
-  .page-hero-safety { padding-top: calc(var(--header-h) + 60px); padding-bottom: 60px; }
-}
-@media (max-width: 420px) {
-  .record-grid { grid-template-columns: 1fr; }
-}
-</style>
 </head>
 <body>
 
 <div data-partial="header" data-active="safety" data-transparent="true"></div>
 
-<!-- ── Hero ──────────────────────────────────────────────────── -->
-<section class="page-hero-safety" aria-label="Safety hero">
-  <div class="deco-bg" aria-hidden="true"></div>
-  <div class="hero-bg-img" aria-hidden="true">
-    <span class="ph-label-float">B-ROLL — Crew safety briefing on deck</span>
+<section class="page-hero" data-screen-label="Safety Hero">
+  <div class="deco-bg"></div>
+  <div class="img-ph dark" style="position:absolute;inset:0;border:none;opacity:0.3" data-parallax="0.2">
+    <span class="ph-label">B-ROLL — Crew safety briefing on deck</span>
   </div>
-
   <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="breadcrumb">
       <a href="index.html"><span class="jp">トップ</span><span class="en-text">Home</span></a>
-      <span aria-hidden="true">/</span>
-      <span><span class="jp">安全・品質</span><span class="en-text">Safety & Quality</span></span>
-    </nav>
-
-    <h1>
-      <span class="jp">安全・品質への取組み</span>
-      <span class="en-text">Safety &amp; Quality</span>
-    </h1>
-    <span class="hero-page-label">SAFETY / 10</span>
-    <p class="hero-page-lead">
+      <span>/</span>
+      <span><span class="jp">安全・品質</span><span class="en-text">Safety</span></span>
+    </div>
+    <h1><span class="jp">安全・品質への取組み</span><span class="en-text">Safety & quality</span></h1>
+    <p class="en-label">SAFETY / 10</p>
+    <p style="margin-top:24px;max-width:60ch;color:rgba(255,255,255,0.8);font-size:16px">
       <span class="jp">「安全運航」は当社の存在意義そのもの。仕組み・人・設備の3軸で安全を守ります。</span>
       <span class="en-text">Safe operations are our reason for being. We protect safety across three axes: system, people, and equipment.</span>
     </p>
   </div>
-
-  <svg class="wave-line" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,30 C240,10 480,50 720,30 C960,10 1200,50 1440,30 L1440,60 L0,60 Z" fill="rgba(255,255,255,0.06)"/>
-  </svg>
+  <svg class="wave-line" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C240,10 480,50 720,30 C960,10 1200,50 1440,30 L1440,60 L0,60 Z" fill="rgba(255,255,255,0.06)"/></svg>
 </section>
 
-<!-- ── Safety Policy ─────────────────────────────────────────── -->
-<section class="section" aria-labelledby="policy-heading">
+<!-- Policy -->
+<section class="section">
   <div class="container">
     <div class="policy-grid">
-
       <div data-reveal>
         <span class="eyebrow">Policy / 01</span>
-        <h2 class="section-title" id="policy-heading">
+        <h2 class="section-title">
           <span class="jp">安全方針</span>
           <span class="en-text">Safety policy</span>
         </h2>
       </div>
-
       <div data-reveal data-reveal-delay="1">
         <p class="policy-statement">
           <span class="jp">私たちは、お客様の貨物と乗組員の命を預かる仕事をしています。<strong>「安全運航は、すべての業務に優先する」</strong>という基本姿勢のもと、海と港の安全文化を育て、継続的に改善します。</span>
           <span class="en-text">We carry our customers' cargo and our crew's lives. Guided by the principle that <strong>"safe operation takes priority over all other work,"</strong> we nurture and continuously improve a culture of port and sea safety.</span>
         </p>
-        <ul class="policy-list" role="list">
-          <li>
-            <span class="num en">I.</span>
-            <span><span class="jp">法令・国際安全管理規則を遵守する</span><span class="en-text">Comply with laws and the ISM Code</span></span>
-          </li>
-          <li>
-            <span class="num en">II.</span>
-            <span><span class="jp">乗組員の教育・訓練を継続する</span><span class="en-text">Maintain continuous crew education and training</span></span>
-          </li>
-          <li>
-            <span class="num en">III.</span>
-            <span><span class="jp">船舶の点検・整備を計画的に実施する</span><span class="en-text">Inspect and maintain vessels systematically</span></span>
-          </li>
-          <li>
-            <span class="num en">IV.</span>
-            <span><span class="jp">ヒヤリ・ハットを共有し、改善する</span><span class="en-text">Share near-miss reports and improve from them</span></span>
-          </li>
-          <li>
-            <span class="num en">V.</span>
-            <span><span class="jp">関係者と連携し、海の安全文化を育てる</span><span class="en-text">Build sea safety culture with all stakeholders</span></span>
-          </li>
+        <ul class="policy-list">
+          <li><span class="num en">I.</span><span><span class="jp">法令・国際安全管理規則を遵守する</span><span class="en-text">Comply with laws and the ISM Code</span></span></li>
+          <li><span class="num en">II.</span><span><span class="jp">乗組員の教育・訓練を継続する</span><span class="en-text">Maintain continuous crew education and training</span></span></li>
+          <li><span class="num en">III.</span><span><span class="jp">船舶の点検・整備を計画的に実施する</span><span class="en-text">Inspect and maintain vessels systematically</span></span></li>
+          <li><span class="num en">IV.</span><span><span class="jp">ヒヤリ・ハットを共有し、改善する</span><span class="en-text">Share near-miss reports and improve from them</span></span></li>
+          <li><span class="num en">V.</span><span><span class="jp">関係者と連携し、海の安全文化を育てる</span><span class="en-text">Build sea safety culture with all stakeholders</span></span></li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── Three Pillars ─────────────────────────────────────────── -->
-<section class="section section--navy" aria-labelledby="pillars-heading">
+<!-- Pillars -->
+<section class="section section--navy">
   <div class="container">
-
     <div data-reveal style="max-width:680px;margin-bottom:64px">
       <span class="eyebrow on-dark">Pillars / 02</span>
-      <h2 class="section-title" id="pillars-heading" style="color:#fff">
-        <span class="jp">3つの柱で支える、<br>安全な運航。</span>
-        <span class="en-text">Three pillars sustaining<br>safe operations.</span>
+      <h2 class="section-title" style="color:#fff">
+        <span class="jp">3つの柱で支える、<br/>安全な運航。</span>
+        <span class="en-text">Three pillars sustaining<br/>safe operations.</span>
       </h2>
     </div>
 
     <div class="pillars">
-
-      <article class="pillar" data-reveal>
-        <span class="pillar-no en" aria-hidden="true">01</span>
+      <div class="pillar" data-reveal>
+        <span class="pillar-no en">01</span>
         <h3><span class="jp">仕組み</span><span class="en-text">System</span></h3>
-        <p>
-          <span class="jp">国際安全管理規則（ISM Code）に準じた運航管理体制。航海計画、リスクアセスメント、報告の手順を文書化。</span>
-          <span class="en-text">An operations management system aligned with the ISM Code. Documented voyage planning, risk assessment and reporting procedures.</span>
-        </p>
-        <ul class="pillar-items" role="list">
+        <p><span class="jp">国際安全管理規則（ISM Code）に準じた運航管理体制。航海計画、リスクアセスメント、報告の手順を文書化。</span><span class="en-text">An operations management system aligned with the ISM Code. Documented voyage planning, risk assessment and reporting.</span></p>
+        <ul>
           <li><span class="jp">運航管理規程</span><span class="en-text">Operations manual</span></li>
           <li><span class="jp">リスクアセスメント</span><span class="en-text">Risk assessment</span></li>
           <li><span class="jp">非常時対応計画</span><span class="en-text">Contingency plan</span></li>
         </ul>
-      </article>
-
-      <article class="pillar" data-reveal data-reveal-delay="1">
-        <span class="pillar-no en" aria-hidden="true">02</span>
+      </div>
+      <div class="pillar" data-reveal data-reveal-delay="1">
+        <span class="pillar-no en">02</span>
         <h3><span class="jp">人</span><span class="en-text">People</span></h3>
-        <p>
-          <span class="jp">熟練と若手をペアに。月次安全会議、年次訓練、避難・救命の実地練習を継続。</span>
-          <span class="en-text">Veterans paired with juniors. Monthly safety meetings, annual training, and hands-on rescue drills, ongoing.</span>
-        </p>
-        <ul class="pillar-items" role="list">
+        <p><span class="jp">熟練と若手をペアに。月次安全会議、年次訓練、避難・救命の実地練習を継続。</span><span class="en-text">Veterans paired with juniors. Monthly safety meetings, annual training, and hands-on rescue drills, ongoing.</span></p>
+        <ul>
           <li><span class="jp">月次安全会議</span><span class="en-text">Monthly meetings</span></li>
           <li><span class="jp">年次乗組員訓練</span><span class="en-text">Annual training</span></li>
           <li><span class="jp">救助・避難実地</span><span class="en-text">Rescue drills</span></li>
         </ul>
-      </article>
-
-      <article class="pillar" data-reveal data-reveal-delay="2">
-        <span class="pillar-no en" aria-hidden="true">03</span>
+      </div>
+      <div class="pillar" data-reveal data-reveal-delay="2">
+        <span class="pillar-no en">03</span>
         <h3><span class="jp">設備</span><span class="en-text">Equipment</span></h3>
-        <p>
-          <span class="jp">ECDIS・AIS・ARPAレーダーを装備。定期点検と部品交換で機関の信頼性を維持。</span>
-          <span class="en-text">Equipped with ECDIS, AIS and ARPA radar. Reliability sustained by periodic inspection and parts replacement.</span>
-        </p>
-        <ul class="pillar-items" role="list">
+        <p><span class="jp">ECDIS・AIS・ARPAレーダーを装備。定期点検と部品交換で機関の信頼性を維持。</span><span class="en-text">Equipped with ECDIS, AIS and ARPA radar. Reliability sustained by periodic inspection and parts replacement.</span></p>
+        <ul>
           <li><span class="jp">航海支援装備</span><span class="en-text">Nav aids</span></li>
           <li><span class="jp">定期点検</span><span class="en-text">Periodic inspection</span></li>
           <li><span class="jp">SOLAS準拠救命設備</span><span class="en-text">SOLAS lifesaving</span></li>
         </ul>
-      </article>
-
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── Safety Record ─────────────────────────────────────────── -->
-<section class="section section--cream" aria-labelledby="record-heading">
+<!-- Record -->
+<section class="section section--cream">
   <div class="container">
-
-    <div data-reveal style="text-align:center;margin-bottom:56px">
+    <div data-reveal style="text-align:center;margin-bottom:48px">
       <span class="eyebrow" style="justify-content:center">Record / 03</span>
-      <h2 class="section-title" id="record-heading">
-        <span class="jp">安全運航の記録</span>
-        <span class="en-text">Safety record</span>
-      </h2>
+      <h2 class="section-title"><span class="jp">安全運航の記録</span><span class="en-text">Safety record</span></h2>
     </div>
 
     <div class="record-grid">
-
       <div class="record" data-reveal>
         <span class="rec-num en"><span data-count="2920">0</span></span>
         <span class="rec-unit"><span class="jp">日</span><span class="en-text">days</span></span>
         <span class="rec-label"><span class="jp">無事故・無災害日数</span><span class="en-text">Days without incident</span></span>
       </div>
-
       <div class="record" data-reveal data-reveal-delay="1">
         <span class="rec-num en"><span data-count="0">0</span></span>
         <span class="rec-unit"><span class="jp">件</span><span class="en-text">cases</span></span>
         <span class="rec-label"><span class="jp">重大海難（過去5年）</span><span class="en-text">Serious incidents (5yr)</span></span>
       </div>
-
       <div class="record" data-reveal data-reveal-delay="2">
         <span class="rec-num en"><span data-count="100">0</span></span>
         <span class="rec-unit">%</span>
         <span class="rec-label"><span class="jp">乗組員年次訓練受講率</span><span class="en-text">Crew annual training</span></span>
       </div>
-
       <div class="record" data-reveal data-reveal-delay="3">
         <span class="rec-num en"><span data-count="12">0</span></span>
         <span class="rec-unit"><span class="jp">回/年</span><span class="en-text">×/yr</span></span>
         <span class="rec-label"><span class="jp">船舶定期点検</span><span class="en-text">Vessel inspections</span></span>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── Environment & Community ───────────────────────────────── -->
-<section class="section" aria-labelledby="env-heading">
+<!-- SDGs / Environment -->
+<section class="section">
   <div class="container env-grid">
-
     <div data-reveal>
       <span class="eyebrow">Environment / 04</span>
-      <h2 class="section-title" id="env-heading">
-        <span class="jp">海と地域への責任</span>
-        <span class="en-text">Responsibility to sea &amp; community</span>
-      </h2>
-      <p class="section-lead">
-        <span class="jp">瀬戸内の海と港を、次の世代へ。当社は環境負荷の低減と地域貢献に継続して取り組みます。</span>
-        <span class="en-text">Sea and harbours of Seto, to the next generation. We continually work to reduce environmental load and contribute to community.</span>
-      </p>
+      <h2 class="section-title"><span class="jp">海と地域への責任</span><span class="en-text">Responsibility to sea & community</span></h2>
+      <p class="section-lead"><span class="jp">瀬戸内の海と港を、次の世代へ。当社は環境負荷の低減と地域貢献に継続して取り組みます。</span><span class="en-text">Sea and harbours of Seto, to the next generation. We continually work to reduce environmental load and contribute to community.</span></p>
     </div>
-
     <div class="env-list" data-reveal data-reveal-delay="1">
-
       <div class="env-item">
-        <span class="env-no">E.01</span>
+        <span class="env-no mono">E.01</span>
         <h4><span class="jp">低硫黄燃料の使用</span><span class="en-text">Low-sulphur fuel</span></h4>
         <p><span class="jp">国際海事機関（IMO）規制に準拠した低硫黄燃料の採用。</span><span class="en-text">Low-sulphur fuel compliant with IMO regulations.</span></p>
       </div>
-
       <div class="env-item">
-        <span class="env-no">E.02</span>
+        <span class="env-no mono">E.02</span>
         <h4><span class="jp">廃油・廃棄物の適正処理</span><span class="en-text">Proper waste handling</span></h4>
         <p><span class="jp">廃油・船舶ゴミは港湾施設へ計画的に陸揚げし適正処理。</span><span class="en-text">Oily waste and refuse offloaded to port facilities and properly processed.</span></p>
       </div>
-
       <div class="env-item">
-        <span class="env-no">E.03</span>
+        <span class="env-no mono">E.03</span>
         <h4><span class="jp">次世代エンジンの導入</span><span class="en-text">Next-gen engines</span></h4>
         <p><span class="jp">新造船には燃費・排出に優れた次世代型主機を採用。</span><span class="en-text">New builds adopt next-gen mains with improved efficiency and emissions.</span></p>
       </div>
-
       <div class="env-item">
-        <span class="env-no">E.04</span>
+        <span class="env-no mono">E.04</span>
         <h4><span class="jp">海岸清掃活動</span><span class="en-text">Coastal clean-ups</span></h4>
         <p><span class="jp">呉港周辺で年4回、海岸清掃ボランティアに参加。</span><span class="en-text">Quarterly coastal clean-up volunteering around Kure Port.</span></p>
       </div>
-
     </div>
   </div>
 </section>
@@ -518,6 +178,139 @@
 
 <script src="assets/partials.js"></script>
 <script src="assets/main.js"></script>
+
+<style>
+.policy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: start;
+}
+.policy-statement {
+  font-size: 17px;
+  line-height: 2;
+  color: var(--text);
+  margin: 0 0 32px;
+  max-width: 60ch;
+}
+.policy-statement strong { color: var(--navy-700); font-weight: 700; }
+
+.policy-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.policy-list li {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.policy-list .num {
+  font-family: var(--font-en);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--navy-500);
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.pillar {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pillar-no {
+  font-family: var(--font-en);
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--navy-300);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.pillar h3 { font-size: 22px; color: var(--white); }
+.pillar p { margin: 0; color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.85; }
+.pillar ul {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pillar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+.pillar ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--navy-400);
+  border-radius: 50%;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.record {
+  background: var(--white);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-top: 3px solid var(--navy-700);
+}
+.rec-num { font-size: 56px; font-weight: 800; letter-spacing: -0.02em; color: var(--navy-900); line-height: 1; }
+.rec-unit { font-size: 12px; color: var(--text-3); margin-top: 8px; }
+.rec-label { font-size: 13px; color: var(--text-2); margin-top: 16px; line-height: 1.5; }
+
+.env-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.env-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.env-item {
+  background: var(--cream);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-left: 3px solid var(--navy-500);
+}
+.env-no { font-size: 10px; letter-spacing: 0.22em; color: var(--navy-500); font-weight: 700; }
+.env-item h4 { font-size: 15px; margin-top: 4px; }
+.env-item p { margin: 0; font-size: 13px; color: var(--text-2); line-height: 1.75; }
+
+@media (max-width: 900px) {
+  .policy-grid, .env-grid { grid-template-columns: 1fr; }
+  .pillars, .record-grid { grid-template-columns: 1fr 1fr; }
+  .env-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .pillars, .record-grid { grid-template-columns: 1fr; }
+}
+</style>
 
 </body>
 </html>
